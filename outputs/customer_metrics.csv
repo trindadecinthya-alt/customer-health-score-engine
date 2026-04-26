@@ -1,0 +1,51 @@
+customer_id,company_name,plan,industry,contract_value,total_events,unique_active_users,days_since_last_activity,login_events,publish_events,export_events,integration_events,total_tickets,open_tickets,high_priority_tickets,days_until_renewal,payment_status,renewal_stage
+C001,Company_1,Enterprise,Tech,35390,230,10,0,55,61,75,58,1,0,0,112,paid,on track
+C002,Company_2,Enterprise,Tech,41284,221,10,0,76,56,60,55,1,0,0,257,paid,on track
+C003,Company_3,Growth,Finance,34426,161,10,0,37,44,47,41,1,0,0,278,paid,on track
+C004,Company_4,Enterprise,Tech,41363,207,10,0,62,56,56,57,1,1,0,52,paid,on track
+C005,Company_5,Growth,Finance,31685,231,10,0,55,65,65,61,0,0,0,364,paid,on track
+C006,Company_6,Growth,Retail,32433,175,10,0,54,43,43,47,2,0,0,360,paid,on track
+C007,Company_7,Growth,Tech,47568,175,10,0,52,48,46,49,0,0,0,125,paid,on track
+C008,Company_8,Enterprise,Healthcare,36396,214,10,0,65,61,55,55,1,1,0,196,paid,on track
+C009,Company_9,Enterprise,Tech,38666,212,10,0,56,60,56,53,0,0,0,114,paid,on track
+C010,Company_10,Enterprise,Healthcare,48431,154,10,0,48,36,41,37,0,0,0,267,paid,on track
+C011,Company_11,Growth,Retail,30189,214,10,0,66,48,56,60,2,0,0,198,paid,on track
+C012,Company_12,Growth,Healthcare,31899,216,10,0,63,47,62,58,0,0,0,85,paid,on track
+C013,Company_13,Enterprise,Retail,47912,144,10,0,39,42,33,37,2,1,0,36,paid,on track
+C014,Company_14,Growth,Finance,38838,190,10,0,53,61,52,36,1,0,0,149,paid,on track
+C015,Company_15,Growth,Finance,40627,159,10,0,49,46,38,40,0,0,0,255,paid,on track
+C016,Company_16,Enterprise,Healthcare,18433,126,10,0,36,32,31,28,4,3,0,100,paid,on track
+C017,Company_17,Starter,Healthcare,12612,94,10,1,20,15,35,25,5,2,0,151,paid,on track
+C018,Company_18,Starter,Retail,31870,92,10,0,25,26,20,22,3,0,0,44,paid,unknown
+C019,Company_19,Growth,Retail,27159,105,10,1,26,23,31,26,2,2,0,112,paid,on track
+C020,Company_20,Starter,Healthcare,13152,49,10,5,14,13,9,14,3,2,3,106,overdue,on track
+C021,Company_21,Starter,Retail,33939,103,10,1,25,29,24,27,5,2,0,69,paid,unknown
+C022,Company_22,Starter,Healthcare,20805,53,10,0,11,12,16,15,3,1,1,132,paid,on track
+C023,Company_23,Growth,Healthcare,19692,115,10,0,31,30,28,27,2,1,0,167,paid,on track
+C024,Company_24,Enterprise,Healthcare,15675,120,10,1,26,44,31,22,5,2,1,174,paid,on track
+C025,Company_25,Enterprise,Healthcare,10995,141,10,0,30,30,37,46,2,1,1,179,paid,on track
+C026,Company_26,Growth,Retail,21534,61,10,0,14,23,10,14,4,0,2,33,paid,unknown
+C027,Company_27,Starter,Finance,11016,89,10,0,32,17,21,19,2,2,1,51,paid,unknown
+C028,Company_28,Enterprise,Tech,33247,95,10,0,21,27,26,23,4,2,0,53,paid,unknown
+C029,Company_29,Growth,Finance,19268,54,9,0,12,15,14,13,4,2,0,71,paid,on track
+C030,Company_30,Growth,Tech,31243,86,10,0,26,17,21,23,5,2,1,179,paid,on track
+C031,Company_31,Growth,Tech,17208,68,10,2,18,20,20,12,4,2,1,120,paid,on track
+C032,Company_32,Starter,Tech,26448,99,10,0,26,25,28,20,3,1,0,52,paid,risk
+C033,Company_33,Starter,Tech,31847,59,10,0,18,15,16,10,3,2,0,173,paid,on track
+C034,Company_34,Starter,Retail,25422,65,10,2,11,24,17,14,3,2,1,82,paid,risk
+C035,Company_35,Enterprise,Tech,10391,126,10,0,24,36,36,33,2,2,1,89,overdue,on track
+C036,Company_36,Growth,Tech,17666,8,5,96,1,5,1,1,4,4,1,-2,overdue,on track
+C037,Company_37,Starter,Finance,11184,16,9,14,5,4,4,3,8,6,3,-56,paid,unknown
+C038,Company_38,Growth,Tech,18067,33,10,0,4,13,9,7,7,7,4,0,paid,risk
+C039,Company_39,Starter,Retail,7454,11,6,0,4,1,5,1,4,2,1,-35,overdue,unknown
+C040,Company_40,Growth,Tech,24115,18,8,21,5,2,6,5,6,5,3,14,overdue,risk
+C041,Company_41,Growth,Finance,14762,12,6,38,6,1,2,3,7,6,3,10,overdue,on track
+C042,Company_42,Starter,Tech,13110,6,4,22,1,1,2,2,10,5,8,-90,paid,unknown
+C043,Company_43,Growth,Tech,22412,39,9,2,18,10,5,6,4,3,3,0,paid,unknown
+C044,Company_44,Starter,Finance,17685,8,7,33,1,2,3,2,4,4,0,27,overdue,unknown
+C045,Company_45,Starter,Tech,5206,22,10,27,6,4,5,7,6,5,1,7,paid,unknown
+C046,Company_46,Starter,Healthcare,22868,31,9,1,9,6,6,10,6,3,4,2,paid,unknown
+C047,Company_47,Starter,Retail,24174,36,10,0,6,12,11,7,6,4,2,25,overdue,on track
+C048,Company_48,Starter,Tech,17383,37,10,6,12,7,7,11,5,4,3,-25,paid,risk
+C049,Company_49,Growth,Tech,12574,45,10,6,12,7,18,8,4,0,2,-4,overdue,unknown
+C050,Company_50,Growth,Finance,24626,46,10,0,16,9,9,12,4,3,3,-51,paid,on track
