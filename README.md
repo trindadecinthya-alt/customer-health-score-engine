@@ -1,18 +1,46 @@
 # Customer Health Score Engine
 
-A comprehensive SaaS customer health analytics system that calculates risk scores, identifies at-risk customers, and provides actionable business insights for Customer Success teams.
+A data-driven system to identify churn risk and prioritize Customer Success actions across SaaS accounts.
+
+Built to simulate how CS, RevOps, and Product teams can align around a single source of truth for customer health.
 
 ---
 
-## Problem Statement
+## 🧠 Problem
 
-Customer Success teams need a data-driven way to:
-- **Identify at-risk customers** before they churn
-- **Prioritize accounts** requiring immediate intervention
-- **Measure portfolio health** across usage, engagement, support, and commercial dimensions
-- **Recommend targeted actions** to improve customer outcomes
+Customer Success teams often rely on fragmented data (product usage, support tickets, billing status) to assess account health. This makes it difficult to proactively identify churn risk and prioritize actions.
 
-This project provides an end-to-end solution to score and segment your customer base by health.
+---
+
+## ⚙️ Solution
+
+This project builds a Customer Health Score Engine that consolidates usage, engagement, support, and commercial data into a single score to:
+
+- Identify at-risk customers
+- Prioritize intervention
+- Support data-driven retention strategies
+
+---
+
+## 🏗️ How it works
+
+1. Generate synthetic SaaS customer data
+2. Load data into SQLite
+3. Compute customer-level metrics using SQL
+4. Calculate health scores using weighted logic
+5. Generate visualizations and business insights
+
+---
+
+## 📊 Results
+
+- 50 customers analyzed
+- 5 customers identified as At Risk
+- 165 support tickets analyzed
+- Key churn drivers identified:
+  - Low product usage
+  - High volume of unresolved support tickets
+  - Overdue payments
 
 ---
 
@@ -167,22 +195,23 @@ Payment and renewal health:
 
 ---
 
-## Recommended Customer Success Actions
+## 🎯 Recommended Actions
 
-### 1. **Engagement Recovery** (At-Risk Segment)
-- **Action**: Immediate outreach to customers with >60 days inactivity
-- **Focus**: Understand barriers to adoption; schedule onboarding review or executive QBR
-- **Impact**: Could improve scores for 5 at-risk customers
+Based on customer health signals, the system can support Customer Success actions:
 
-### 2. **Support Ticket Resolution** (Watchlist & At-Risk)
-- **Action**: Triage and resolve 54 high-priority tickets
-- **Focus**: Clear backlog of 97 open issues
-- **Impact**: Could lift 20 customers to Healthy segment
+- 🔴 **At Risk + Low Usage**
+  → Trigger re-engagement campaigns (training, onboarding refresh)
 
-### 3. **Payment & Renewal Risk Mitigation** (Commercial Focus)
-- **Action**: Contact customers with overdue payments
-- **Focus**: Renewal conversations with at-risk renewal stage accounts
-- **Impact**: Prevent churn and revenue leakage
+- 🔴 **At Risk + High Support Load**
+  → Prioritize escalation and technical resolution
+
+- 🟡 **Watchlist + Upcoming Renewal**
+  → Schedule QBR and align on value realization
+
+- 🟢 **Healthy + High Engagement**
+  → Identify expansion opportunities (upsell/cross-sell)
+
+This transforms the model from a monitoring tool into a decision-support system.
 
 ---
 
@@ -208,7 +237,7 @@ source .venv/bin/activate
 
 3. **Install dependencies**
 ```bash
-pip install pandas matplotlib
+pip install -r requirements.txt
 ```
 
 ### Run the Pipeline
@@ -228,6 +257,20 @@ python3 calculate_health_scores.py
 # 4. Generate visualizations and insights
 python3 analyze_health_scores.py
 ```
+
+### Run the Interactive Dashboard
+
+Launch the Streamlit web interface:
+
+```bash
+streamlit run app.py
+```
+
+The app will open at `http://localhost:8501` with:
+- 📊 **Dashboard**: Key portfolio metrics and visualizations
+- 🔍 **Customer Search**: Find and analyze individual customers
+- 📈 **Detailed Analysis**: Deep dive into portfolio composition
+- 💡 **Recommendations**: Actionable insights by health segment
 
 ### Outputs
 
